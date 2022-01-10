@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel = "icon" href = 
+    "https://www.keralatourism.org/favicon.ico" 
+            type = "image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Districts</title>
+  </head>
+  <style>
+    .images{
+      width:100%;
+      height:550px;
+    }
+    .dropdown-menu a:focus { background-color:rgb(215, 255, 225); color:grey; }
+    @media only screen and (max-width: 600px) {
+      .images{
+        height:300px;
+      }
+  }
+  </style>
+  <script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+  </script>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img style="width:120px; height:50px;" src="images/k-logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul style="font-size:18px;" class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#">Bookings</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Districts
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="d1_alappuzha.html">Alappuzha</a></li>
+                  <li><a class="dropdown-item" href="d2_ernakulam.html">Ernakulam</a></li>
+                  <li><a class="dropdown-item" href="d3_idduki.html">Idduki</a></li>
+                  <li><a class="dropdown-item" href="d4_kannur.html">Kannur</a></li>
+                  <li><a class="dropdown-item" href="d5_kasargod.html">Kasaragod</a></li>
+                  <li><a class="dropdown-item" href="d6_kollam.html">Kollam</a></li>
+                  <li><a class="dropdown-item" href="d7_kottayam.html">Kottayam</a></li>
+                  <li><a class="dropdown-item" href="d8_kozhikode.html">Kozhikode</a></li>
+                  <li><a class="dropdown-item" href="d9_malappuram.html">Malappuram</a></li>
+                  <li><a class="dropdown-item" href="d10_palakkad.html">Palakkad</a></li>
+                  <li><a class="dropdown-item" href="d11_pathamathitta.html">Pathanamthitta</a></li>
+                  <li><a class="dropdown-item" href="d12_thiruvananthapuram.html">Thiruvananthapuram</a></li>
+                  <li><a class="dropdown-item" href="d13_thrissur.html">Thrissur</a></li>
+                  <li><a class="dropdown-item" href="d14_wayanad.html">Wayanad</a></li>
+                  <li><a class="dropdown-item" href="districts.html">All Districts</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Government Of Kerala</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul style="font-size:18px;" class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item px-5">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Navigation Bar Ends -->
+    <!-- Scroll tracker -->
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+    <!-- Scroll tracker ends -->
+    <!-- Districts cards -->
+    <div class="container py-3">
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://www.keralatourism.org/images/destination/large/alappuzha20160801052013_60_1.jpg" class="h-75 rounded float start ratio text-center" alt="Alappuzha">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Alappuzha</h3>
+          <p>Referred to as the Venice of the East, Alappuzha has always enjoyed an important place in the maritime history of Kerala. Today, it is famous for its boat races, backwater holidays, beaches, marine products and coir industry. Alappuzha Beach is a popular picnic spot. The pier, which extends out to the sea here, is over 137 years old. Entertainment facilities at the Vijaya Beach Park add to the attraction of the beach. There is also an old lighthouse nearby which greatly intrigues all visitors.</p>
+          <a href="d1_alappuzha.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://www.keralatourism.org/images/microsites/kochi/kochi-1024x768.jpg" class="h-75 rounded float start ratio text-center" alt="Ernakulam">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Ernakulam</h3>
+          <p>Ernakulam also known as Kochi or Cochin is known as the commercial capital of Kerala and famous for its ancient temples, churches and mosques. The district  of Ernakulam hosts the highest number of international and domestic tourists in Kerala state and listed as the most advanced district in Kerala. Marine Drive Kochi,Chinese Fishing Nets and Hill Palace Museum are the major tourist attraction in Ernakulam city. </p>
+          <a href="d2_ernakulam.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://www.keralatourism.org/images/destination/large/idukki_arch_dam20150530085042_187_2.jpg" class="h-75 rounded float start ratio text-center" alt="Idukki">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Idukki</h3>
+          <p>Idukki is the second largest district of Kerala, famous for its hill station destination like Munnar and Thekkady. The Gateway to high wavy mountains of the Western Ghats,Rugged mountains and forests and home to Anamudi, the highest peak in India south of the Himalayas. Places of interest around Idukki are Munnar tea plantations, Thattekad Bird Sanctuary,Marayur remote village and Eravikulam Wildlife Sanctuary.</p>
+          <a href="d3_idduki.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/41/49/ca/come-explore.jpg?w=1000&h=-1&s=1" class="h-75 rounded float start ratio text-center" alt="Kannur">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Kannur</h3>
+          <p>Kannur is northernmost districts of Kerala blessed with full of greenary and historious places. Kannur is famous for Politics and Temple festivals. Towards the north of Kozhikod and Wayanad districts lies the district of Kannur. The region is famous for the dazzling ritual performance called Theyyam.</p>
+          <a href="d4_kannur.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://www.keralatourism.org/images/destination/large/aquatourism_in_kasaragod20131107114603_306_1.jpg" class="h-75 rounded float start ratio text-center" alt="Kasaragod">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Kasaragod</h3>
+          <p>Kasaragod is world renowned for its coir and hand-loom industries,a coastline of around 29.3 kilometers and consists of high mountain ranges like the Ranipuram Kottencheri belt and filled with rivers, hillocks, beaches, shrines and forts. Kasaragod is often named as land of Lords and Forts and one of the most beautiful districts in Kerala with number of tourist attractions including biggest Bekal Fort,Ananthapura Lake Temple, Ranipuram Hill Station,Kottancheri Hills and Valiyaparamba Backwaters.</p>
+          <a href="d5_kasargod.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/04/Jatayu%E2%80%99s-Earth-Centre-kollam-kb6592.jpg" class="h-75 rounded float start ratio text-center" alt="Kollam">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Kollam</h3>
+          <p>Kollam is the southern getaway to Kerala’s backwaters and one end of the popular backwater ferry trip to Alleppey. The capital of Kerala’s cashew industry is famous for Plains, mountains, lakes, lagoons and backwaters, forest and Boat race in Sasthamkotta Lake, the largest freshwater lake,Ashtamudi Lake and Paravur Lake. </p>
+          <a href="d6_kollam.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://www.keralabackwater.com/blog/wp-content/uploads/2018/04/Nadukani.jpg" class="h-75 rounded float start ratio text-center" alt="Kottayam">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Kottayam</h3>
+          <p>Kottayam has unique characteristics panoramic backwater stretches, lush paddy fields, highlands, hills and hillocks. The city is bordered by the Western Ghats on the east and the Vembanad Lake and paddy fields of Kuttanad also a gateway to the pilgrim centers like Sabarimala. Kumarakom Bird Sanctuary,Kumarakom Boat Race and Houseboat at Kumarakom lake are the popular tourism destination located near the city of Kottayam and Vembanad lake backwaters is counted as one of the largest lakes in India and home to Nehru Trophy Boat Race.</p>
+          <a href="d7_kottayam.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://keralatourism.travel/images/destinations/places-to-visit/kozhikode/mananchira-square-kozhikode-kerala-tourism-entry-fee-timings-holidays-reviews-small.jpg" class="h-75 rounded float start ratio text-center" alt="Kozhikode">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Kozhikode</h3>
+          <p>Kozhikode also known as Calicut on the Malabar Coast of Kerala,famous for its boat-building yard, timber industry and historic temples and churches. The second largest city in Kerala is part of the second largest urban agglomeration in Kerala and the town has a long recorded history. Major Attractions and places of interest around Kozhikode are Kozhikode Beach,Mananchira park,Tali Shiva Temple and Kappad Beach.</p>
+          <a href="d8_kozhikode.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://www.keralatourism.org/images/destination/large/kottakkunnu_in_malappuram20131207102234_396_2.jpg" class="h-75 rounded float start ratio text-center" alt="Malappuram">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Malappuram</h3>
+          <p>The hilly district of Malappuram falls among the northern districts in the state of Kerala. Closely bordered by the mountain ranges of the Western Ghats on its east, and flanked by the Arabian Sea on the West, Malappuram has an eventful history with the Zamorins of Kozhikode ruling the region for a significant period in the past.</p>
+          <a href="d9_malappuram.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/04/visit-Palakkad-Fort.jpg" class="h-75 rounded float start ratio text-center" alt="Palakkad">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Palakkad</h3>
+          <p>Palakkad is known as the gateway to Kerala due to the presence of the Palakkad Gap, a low mountain pass in the Western Ghats between Coimbatore in Tamil Nadu and Palakkad. The hill town of Palakkad is the seventh most populous in Kerala and known for the most amazing places of interest around Palakkad Fort,Jainimedu Jain Temple,Kalpathy,Malampuzha Dam and Gardens,Walyar Deer wildlife sanctuary, Dhoni Waterfalls and Paddy fields.</p>
+          <a href="d10_palakkad.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://cdn.s3waas.gov.in/s3e2ef524fbf3d9fe611d5a8e90fefdc9c/uploads/2018/04/2018042468.jpg" class="h-75 rounded float start ratio text-center" alt="Pathanamthitta">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Pathanamthitta</h3>
+          <p>Pathanamthitta district is known as the 'Headquarters of Pilgrimage Tourism', of the Kerala State. Situated near the Western Ghats and bordered by the hills, Pathanamthitta district is a treat to eyes with its vast unending stretches of forests, rivers and rural landscapes. Blessed by nature, the district is famous for its scenic beauty, fairs and festivals.</p>
+          <a href="d11_pathamathitta.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://irisholidays.com/backend/web/destination-details/1567410031975.jpg" class="h-75 rounded float start ratio text-center" alt="Thiruvananthapuram">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Thiruvananthapuram</h3>
+          <p>The southern tip of God’s Own Country is home to the administrative and cultural hub of the State, Thiruvananthapuram. From a landscape naturally endowed with some of the most picturesque visuals possible along with culturally relevant holy sites that have thrived for more than a thousand years, this area has something for everyone. </p>
+          <a href="d12_thiruvananthapuram.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/03/cover6.jpg" class="h-75 rounded float start ratio text-center" alt="Thrissur">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Thrissur</h3>
+          <p>Thrissur is known as the cultural capital of Kerala and the land of Poorams also famous for its ancient temples, churches, and mosques. Thrissur Pooram is the most colourful and spectacular temple festival in Kerala and Places of interest in Thrissur Rural District are Athirapilly Water Falls, Punnathur Kotta Elephant Sanctuary, Thrissur Kole Wetlands and Chavakad Beach. </p>
+          <a href="d13_thrissur.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+      <div class="row bg-light position-relative border border-1">
+        <div class="h-75 col-lg-5 gx-5 py-4">
+          <img src="https://www.ekeralatourism.net/wp-content/uploads/2017/12/Wayanad-1-1.jpg" class="h-75 rounded float start ratio text-center" alt="Wayanad">
+        </div>
+        <div class="h-75 col-lg-7 gx-5 pt-5">
+          <h3 class="mt-0">Wayanad</h3>
+          <p>Wayanad District shares border with Kozhikode, Kannur and Malappuram districts, Nilgiris district and Kodagu districts and has the highest number of tribals in Kerala. Wayanad is set on the high altitudes of Western Ghats with high hills and Mountains Chembra Peak,Banasura Peak and Brahmagiri are some of the important mountains in the district.</p>
+          <a href="d14_wayanad.html" class="stretched-link">Explore more</a>
+        </div>
+      </div>
+    </div>
+    <!-- District cards ends -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    
+      <!-- Grid container -->
+      <!-- Footer -->
+    <div class="container-fluid row border p-3">
+        <footer class="py-1">
+          <div class="row">
+            <div class="col-lg-2 offset-1">
+              <h5 class="text-body">Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-lg-4 offset-4">
+              <form>
+                <h5 class="text-body" >Subscribe to our newsletter</h5>
+                <p class="text-body">Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex justify-content-between py-1 my-1 border-top">
+            <p class="text-body">© 2022 Kerala Tourism, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      <!-- Footer ends -->
+  </body>
+</html>

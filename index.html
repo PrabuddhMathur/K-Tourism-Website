@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Kerala Tourism</title>
+    <link rel = "icon" href = 
+"https://www.keralatourism.org/favicon.ico" 
+        type = "image/x-icon">
+  </head>
+  <style>
+    .images{
+      width:100%;
+      height:550px;
+    }
+    .dropdown-menu a:focus { background-color:rgb(215, 255, 225); color:grey; }
+    @media only screen and (max-width: 600px) {
+      .images{
+        height:300px;
+      }
+  }
+  </style>
+    <script>
+      // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
+  
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+    </script>
+  <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img style="width:120px; height:50px;" src="images/k-logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul style="font-size:18px;" class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item px-3 ">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="#">Bookings</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Districts
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="d1_alappuzha.html">Alappuzha</a></li>
+              <li><a class="dropdown-item" href="d2_ernakulam.html">Ernakulam</a></li>
+              <li><a class="dropdown-item" href="d3_idduki.html">Idduki</a></li>
+              <li><a class="dropdown-item" href="d4_kannur.html">Kannur</a></li>
+              <li><a class="dropdown-item" href="d5_kasargod.html">Kasaragod</a></li>
+              <li><a class="dropdown-item" href="d6_kollam.html">Kollam</a></li>
+              <li><a class="dropdown-item" href="d7_kottayam.html">Kottayam</a></li>
+              <li><a class="dropdown-item" href="d8_kozhikode.html">Kozhikode</a></li>
+              <li><a class="dropdown-item" href="d9_malappuram.html">Malappuram</a></li>
+              <li><a class="dropdown-item" href="d10_palakkad.html">Palakkad</a></li>
+              <li><a class="dropdown-item" href="d11_pathamathitta.html">Pathanamthitta</a></li>
+              <li><a class="dropdown-item" href="d12_thiruvananthapuram.html">Thiruvananthapuram</a></li>
+              <li><a class="dropdown-item" href="d13_thrissur.html">Thrissur</a></li>
+              <li><a class="dropdown-item" href="d14_wayanad.html">Wayanad</a></li>
+              <li><a class="dropdown-item" href="districts.html">All Districts</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Government Of Kerala</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul style="font-size:18px;" class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item px-5">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation Bar Ends -->
+      <!-- Scroll tracker -->
+      <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <!-- Scroll tracker ends -->
+  <!-- Carousel -->
+  <div class="container-fluid mt-3">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="images" src="./images/kumarakom-banner.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5 class="h3">Kumarakom</h5>
+          <p>If the beauty of Kerala has to be described in one word, it has to be ‘Kumarakom’! One of the most scenic and tranquil tourist destinations in Kerala.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="images" src="./images/Wayanad.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5 class="h3">Wayanad</h5>
+          <p>Nestled amidst the fascinating charm of the Western Ghats, Wayanad or the twelfth district of God’s Own Country is among the most popular and highest visited tourist destinations in Kerala.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="images" src="./images/munnar-baner-1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5 class="h3">Munnar</h5>
+          <p>One of the most scenic hill stations in Kerala, Munnar is truly a heavenly tourist destination in God’s Own Country.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="images" src="./images/Periyar-National-Park-banner.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5 class="h3">Periyar</h5>
+          <p>If you want to enjoy an encounter with the majestic Bengal Tigers or the massive Mammoths during your Kerala trip, you must visit the wildlife abode called the Periyar National Park.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="images" src="./images/vagamon-banner.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5 class="h3">Vagamon</h5>
+          <p>Pristine and still untouched by the outer world, Vagamon is among the most magnificent hill stations in Kerala!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+  <!-- Carousel Ends -->
+  <div class="container-fluid my-4">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">"Kerala's culture and traditions, coupled with its varied demographics, have made the state one of the most popular tourist destinations in India. In 2012, National Geographic's Traveller magazine named Kerala as one of the "ten paradises of the world" and "50 must see destinations of a lifetime". Travel and Leisure also described Kerala as "One of the 100 great trips for the 21st century". In 2012, it overtook the Taj Mahal to be the number one travel destination in Google's search trends for India. CNN Travel listed Kerala amongst its '19 best places to visit in 2019' ".</p>
+      <footer class="blockquote-footer my-2">Wikipedia</footer>
+    </blockquote>
+  </div>
+  <!-- Things to do -->
+  <div class="container py-3">
+    <p class="h2 text-align-center">Things to do in Kerala</p>
+    <div class="row bg-light position-relative border border-1">
+      <div class="h-75 col-lg-5 gx-5 py-4">
+        <img src="https://www.keralatourism.org/images/homecontentimage/tab/Catamaran-cruise.jpg" class="h-75 rounded float start ratio text-center" alt="Alappuzha">
+      </div>
+      <div class="h-75 col-lg-7 gx-5 pt-5">
+        <h3 class="mt-0">Catamaran Cruise</h3>
+        <p>Kovalam is a favourite beach destination for travellers around the world. This coastal town in Kerala invites you to experience some exciting activities. 
+          You can begin your day here on a high note by hopping onto a catamaran and rowing into the sea. For incredible views of Kerala coastal life, you must sail along the vast stretch of the blue ocean world and join your hands with the fisherfolks. The catamaran cruise is a thrilling activity to engage in while visiting God's Own Country.
+          </p>
+        <a href="https://www.keralatourism.org/campaigns/kerala365/catamaran-cruise-kovalam" target="blank" class="stretched-link">Explore more</a>
+      </div>
+    </div>
+    <div class="row bg-light position-relative border border-1">
+      <div class="h-75 col-lg-5 gx-5 py-4">
+        <img src="https://www.keralatourism.org/images/homecontentimage/desktop/Things_to_Do.jpg" class="h-75 rounded float start ratio text-center" alt="Ernakulam">
+      </div>
+      <div class="h-75 col-lg-7 gx-5 pt-5">
+        <h3 class="mt-0">Festivals</h3>
+        <p>The festival season, the pride and joy of Kerala, is epitomised by the ferocious beats of the chenda (drums) emanating across the landscape. Elephants march across towns and the rivers surge with massive 100 feet long snake boats in a display that can only be experienced in an area renowned as God's Own Country. The entire State celebrates together as the land is covered in a plethora of lights and merriment. </p>
+        <a href="https://www.keralatourism.org/event" target="blank" class="stretched-link">Explore more</a>
+      </div>
+    </div>
+    <div class="row bg-light position-relative border border-1">
+      <div class="h-75 col-lg-5 gx-5 py-4">
+        <img src="https://www.keralatourism.org/images/homecontentimage/tab/Things_to_Do-fishing.jpg" class="h-75 rounded float start ratio text-center" alt="Idukki">
+      </div>
+      <div class="h-75 col-lg-7 gx-5 pt-5">
+        <h3 class="mt-0">Fishing</h3>
+        <p>To know the spirit of Kerala, turn to the livelihood practices of the people in this land that collectively forms the backbone of this state. Fishing, more than just a livelihood, has grabbed the attention of tourists seeking to learn the nuances of the practice.</p>
+        <a href="https://www.keralatourism.org/campaigns/kerala365/fishing-in-kerala" target="blank" class="stretched-link">Explore more</a>
+      </div>
+    </div>
+    <div class="row bg-light position-relative border border-1">
+      <div class="h-75 col-lg-5 gx-5 py-4">
+        <img src="https://www.keralatourism.org/images/homecontentimage/tab/malabar-food21.jpg" class="h-75 rounded float start ratio text-center" alt="Kannur">
+      </div>
+      <div class="h-75 col-lg-7 gx-5 pt-5">
+        <h3 class="mt-0">Malabar Cruisine</h3>
+        <p>Flanked by the Western Ghats and the Arabian Sea, the Malabar area is responsible for having provided some of the most delicious and flavourful additions to Kerala cuisine. It has a wide range of vegetarian and non-vegetarian fare and people flock to these parts to taste the unique flavour of the food here. Here is a collection of recipes of some of the premier dishes that best represent Malabar’s food culture. The very aroma of Malabar dishes will surely transport you to the friendly shores from which this delicious cuisine originated. Enjoy cooking. </p>
+        <a href="https://www.keralatourism.org/kerala-food/malabar-cuisine/" target="blank" class="stretched-link">Explore more</a>
+      </div>
+    </div>
+    <div class="row bg-light position-relative border border-1">
+      <div class="h-75 col-lg-5 gx-5 py-4">
+        <img src="https://www.keralatourism.org/images/homecontentimage/tab/jatayu.jpg" class="h-75 rounded float start ratio text-center" alt="Kasaragod">
+      </div>
+      <div class="h-75 col-lg-7 gx-5 pt-5">
+        <h3 class="mt-0">Adventure Activities</h3>
+        <p>You will certainly get mesmerised with Kollam’s latest tourist attraction, the Jatayu Earth’s Center that hosts the world’s largest bird sculpture. Spanning over 65 acres across four hills, this is the State’s first ever BOT (Build-Operate-Transfer) tourism.
+
+          The monumental statue of Jatayu resting high up the hill catches your attention even from afar on your way to Chadayamangalam in Kollam district. Jatayu is a legendary bird from the Indian epic Ramayana.</p>
+        <a href="https://www.keralatourism.org/kerala-article/2018/jatayu-earth-centre/848" target="blank" class="stretched-link">Explore more</a>
+      </div>
+    </div>
+    <div class="row bg-light position-relative border border-1">
+      <div class="h-75 col-lg-5 gx-5 py-4">
+        <img src="https://www.keralatourism.org/images/homecontentimage/desktop/yogasep211.jpg" class="h-75 rounded float start ratio text-center" alt="Kollam">
+      </div>
+      <div class="h-75 col-lg-7 gx-5 pt-5">
+        <h3 class="mt-0">Yoga</h3>
+        <p>To some, it is the practice of exercises called asanas (bodily postures), to improve body flexibility and strengthen their muscles. For some others, it is a way of relieving mental stress through the performance of body postures.  It is true that yoga asanas help to make spine supple and tone up muscles and can bring.</p>
+        <a href="https://www.keralatourism.org/yoga" target="blank" class="stretched-link">Explore more</a>
+      </div>
+    </div>
+    </div>
+  <!-- Things to do ends -->
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  -->
+        <!-- Footer -->
+        <div class="container-fluid col border p-3">
+          <footer class="py-1">
+            <div class="row">
+              <div class="col-2 offset-1">
+                <h5 class="text-body">Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-3 offset-5">
+                <form>
+                  <h5 class="text-body" >Subscribe to our newsletter</h5>
+                  <p class="text-body">Monthly digest of whats new and exciting from us.</p>
+                  <div class="d-flex w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        
+            <div class="d-flex justify-content-between py-1 my-1 border-top">
+              <p class="text-body">© 2022 Kerala Tourism, Inc. All rights reserved.</p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+        <!-- Footer ends -->
+
+  </body>
+</html>
