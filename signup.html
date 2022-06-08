@@ -112,6 +112,7 @@
                         style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"
                       />
                     </div>
+                    <form name="form1">
                     <div class="col-xl-6">
                       <div class="card-body p-md-5 text-black">
                         <h3 class="mb-5 text-uppercase">Register here</h3>
@@ -171,22 +172,23 @@
                         </div>
         
                         <div class="form-outline mb-4">
-                          <input type="text" id="form3Example9" class="form-control form-control-lg" />
-                          <label class="form-label" for="form3Example9">DOB</label>
+                          <input type="tel" id="form3Example9" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example9">Phone Number</label>
                         </div>
         
                         <div class="form-outline mb-4">
-                          <input type="text" id="form3Example97" class="form-control form-control-lg" />
-                          <label class="form-label" for="form3Example97">Email ID</label>
+                          <input type="text" name="text1" id="form2Example18" class="form-control form-control-lg" />
+                          <label class="form-label" for="form2Example18">Email ID</label>
                         </div>
                         <a class="mb-5" href="login.html">Already have an account? Login here.</a>
                         <div class="d-flex justify-content-end pt-3">
                           <button type="button" class="btn btn-light btn-lg">Reset all</button>
-                          <button type="button" class="btn btn-success btn-lg ms-2">Submit form</button>
+                          <button type="button" class="btn btn-success btn-lg ms-2" onClick="ValidateEmail(document.form1.text1);ValidateEmail();">Submit form</button>
                         </div>
         
                       </div>
                     </div>
+                  </form>
                   </div>
                 </div>
               </div>
@@ -245,5 +247,6 @@
         </footer>
       </div>
       <!-- Footer ends -->
+      <script src="script.js"></script>
   </body>
 </html>
